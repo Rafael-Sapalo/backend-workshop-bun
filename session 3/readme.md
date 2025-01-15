@@ -15,20 +15,7 @@
      bun add drizzle-orm pg
      ```
    - Configure Drizzle ORM with a PostgreSQL connection:
-     ```typescript
-     import { drizzle } from 'drizzle-orm';
-     import { Pool } from 'pg';
-
-     const pool = new Pool({
-       user: 'your_user',
-       host: 'localhost',
-       database: 'workshop',
-       password: 'your_password',
-       port: 5432,
-     });
-
-     export const db = drizzle(pool);
-     ```
+    Follow the instructions in the [Drizzle ORM documentation](https://orm.drizzle.team/docs/get-started/postgresql-new).
    - Research and define the schema for your database tables (e.g., `users` and `todos`) using PostgreSQL and Drizzle ORM.
    - Write migration scripts to create and modify database schemas as required.
    - Verify the database connection by querying data from the tables.
